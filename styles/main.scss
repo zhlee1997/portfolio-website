@@ -1,0 +1,16 @@
+@import "./shared/font";
+// pages
+@import "./index";
+// components
+@import "./components/header";
+
+.absolute {
+  position: absolute;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", "Helvetica";
+}

@@ -2,7 +2,15 @@ import React from "react";
 import BaseLayout from "../components/layouts/BaseLayout";
 import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
+import Typed from "react-typed";
 
+const roles = [
+  "Developer",
+  "Tech Lover",
+  "Team Player",
+  "Data Person",
+  "Web3 DeFi",
+];
 class Index extends React.Component {
   render() {
     return (
@@ -22,7 +30,7 @@ class Index extends React.Component {
                   <div className={`flipper`}>
                     <div className="back">
                       <div className="hero-section-content">
-                        <h2> Full Stack Web Developer </h2>
+                        <h2>Full Stack Developer</h2>
                         <div className="hero-section-content-intro">
                           Have a look at my portfolio and job history.
                         </div>
@@ -35,7 +43,7 @@ class Index extends React.Component {
                         height={400}
                       />
                       <div className="shadow-custom">
-                        <div className="shadow-inner"> </div>
+                        <div className="shadow-inner"></div>
                       </div>
                     </div>
                   </div>
@@ -44,11 +52,22 @@ class Index extends React.Component {
               <Col md="6" className="hero-welcome-wrapper">
                 <div className="hero-welcome-text">
                   <h1>
-                    Welcome to the portfolio website of Filip Jerga. Get
+                    Welcome to the portfolio website of Jeremy Lee. Get
                     informed, collaborate and discover projects I was working on
                     through the years!
                   </h1>
                 </div>
+                <Typed
+                  loop
+                  strings={roles}
+                  typeSpeed={70}
+                  backSpeed={70}
+                  backDelay={1000}
+                  loopCount={0}
+                  showCursor
+                  className="self-typed"
+                  cursorChar="|"
+                />
                 <div className="hero-welcome-bio">
                   <h1>Let&apos;s take a look on my work.</h1>
                 </div>
